@@ -13,10 +13,22 @@
 - 使用[IMDLBenCo](https://github.com/scu-zjz/IMDLBenCo)框架开发，您后续自己的模型也可以参考这样的设计范式来release仓库。
 - 具体来说是使用了`benco init`功能，详情参考本[样例](https://scu-zjz.github.io/IMDLBenCo-doc/guide/quickstart/3_demo.html)：
 
-## Prepare Dataset and pre-trained weights
+
+## 快速引导
+
+### 环境准备
+请执行如下指令clone本仓库到你的工作目录。
+```shell
+git clone https://github.com/SunnyHaze/IML-ViT-IMDLBenCo.git
+```
+然后执行如下指令安装所需依赖（你需要先自己安装pytorch）
+```shell
+pip install -r requirements.txt
+```
+
+### 准备MAE的预训练参数
 - 参考BenCo教程中的[数据集准备章节](https://scu-zjz.github.io/IMDLBenCo-doc/guide/quickstart/0_dataprepare.html)或[IML-ViT的Readme](https://github.com/SunnyHaze/IML-ViT/blob/main/README.md)，它们的内容是一致的。
 - 请参考[MAE下载链接](./pretrained-weights/mae_download_page.md)下载MAE预训练权重到该路径下。
-## Quick Start
 
 随后，你只需要修改`train_imlvit.sh`中的`--data_path`和`--test_data_path`路径为你准备好的数据集路径即可。
 
